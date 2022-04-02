@@ -1,0 +1,38 @@
+@use '../../styles/vars';
+
+.filter{
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  &-all{
+    background-color:vars.$bgAllColor;
+    width : 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    color: white;
+    cursor: pointer;
+  }
+  &-kind{
+    background-color:vars.$bgKindColor;
+    width : 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    color: white;
+    cursor: pointer;
+  }
+  &-bad{
+    background-color:vars.$bgBadColor;
+    width : 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    color: white;
+    cursor: pointer;
+
+  }
+}

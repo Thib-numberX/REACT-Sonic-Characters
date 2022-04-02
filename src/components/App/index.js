@@ -14,8 +14,8 @@ import charactersList from 'src/data/characters';
 
 // composant
 import Header from '../Header/header';
-import Current from '../Current/current';
 import Filter from '../Filter/filter';
+import Current from '../Current/current';
 import Characters from '../Characters/characters';
 
 // == Composant

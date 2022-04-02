@@ -1,0 +1,41 @@
+@use '../../styles/vars';
+
+.current{
+  background-color: vars.$secondBgColor;
+  margin: 15px auto;
+  width: 300px;
+  min-height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+  &-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: vars.$textColorTitle;
+    text-shadow: 0 0 1px white;
+  }
+  &-descrip{
+    line-height: 1.4rem;
+    margin: 10px;
+  }
+  &-tag{
+    margin: 10px;
+    background-color: vars.$bgKindColor;
+    width : 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    
+  }
+}
