@@ -9,7 +9,7 @@ import './app.scss';
 
 // data
 
-import charactersList from 'src/data/characters';
+import characters from 'src/data/characters';
 // import picturesList from './pictures';
 
 // composant
@@ -20,12 +20,13 @@ import Characters from '../Characters/characters';
 
 // == Composant
 function App() {
+  // console.log(characters);
   return (
     <div className="app">
       <Header />
       <Filter />
       <Current />
-      <Characters />
+      <Characters charactersList={characters} />
     </div>
   );
 }

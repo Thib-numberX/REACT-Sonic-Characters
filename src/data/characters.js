@@ -2,13 +2,13 @@ export default [
   {
     name: 'Sonic',
     description: 'Sonic est un hérisson supersonique le plus rapide du monde. Toujours en vadrouille, il va où le vent l\'emporte et vit sa vie selon ses propres règles plutôt que celles de ceux qui l\'entourent. Il est plutôt facile à vivre et aide toujours son prochain. Ce qu\'il déteste plus que tout c\'est Dr Eggman qui veut prendre le contrôle du monde.',
-    picture: '../pictures/sonic.jpg',
+    picture: '../../../../pictures/sonic.jpg',
     type: 'Gentil',
   },
   {
     name: 'Amy Rose',
     description: 'Amy Rose est une fille excessivement joyeuse et très amoureuse de Sonic qui veut se marier avec lui. Elle se sert de son Piko Piko Hammer pour se battre. Sonic la trouve plus ou moins embarrassante mais au fond de lui, il ne la déteste peut-être pas tant que ça.',
-    picture: '../pictures/amy.jpg',
+    picture: '../../../pictures/amy.jpg',
     type: 'Gentil',
   },
   {

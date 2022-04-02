@@ -28,11 +28,25 @@
     border-radius: 10px;
 
   }
-  &-li{
-    width: 100%;
-    height: 30px;
-    border-bottom: 1px solid vars.$underline-color ;
-    padding: 20px;
-    cursor:pointer;
+  &_img-li{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+    .characters-img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid black;
+
+    }
+    .characters-li{
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid vars.$underline-color ;
+      padding: 20px;
+      cursor:pointer;
+    }
   }
+  
 }
