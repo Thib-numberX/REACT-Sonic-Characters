@@ -1,13 +1,31 @@
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+// npm
+
+// local
+
+// style
+
+import './app.scss';
+
+// data
+
+import charactersList from 'src/data/characters';
+// import picturesList from './pictures';
+
+// composant
+import Header from '../Header/header';
+import Current from '../Current/current';
+import Filter from '../Filter/filter';
+import Characters from '../Characters/characters';
 
 // == Composant
 function App() {
   return (
     <div className="app">
-      <img src={reactLogo} alt="react logo" />
-      <h1>Composant : App</h1>
+      <Header />
+      <Filter />
+      <Current />
+      <Characters />
     </div>
   );
 }

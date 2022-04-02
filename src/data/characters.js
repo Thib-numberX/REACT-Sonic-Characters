@@ -73,7 +73,7 @@ export default [
   },
   {
     name: 'Dr. Egmann',
-    description: "Dr. Egmann est un docteur qui a QI extraordinaire de 300. Egmann est un romantique, un féministe et il se veut être gentilhomme. Malheureusement, son charme est difficile à percevoir à travers l'abominable rire qui accompagne ses folles déclarations de suprématie mondiale. Sonic essaie de trouver un moyen de mettre fin à ses stratagèmes.",
+    description: 'Dr. Egmann est un docteur qui a QI extraordinaire de 300. Egmann est un romantique, un féministe et il se veut être gentilhomme. Malheureusement, son charme est difficile à percevoir à travers l\'abominable rire qui accompagne ses folles déclarations de suprématie mondiale. Sonic essaie de trouver un moyen de mettre fin à ses stratagèmes.',
     picture: '../pictures/eggman.jpg',
     type: 'Méchant',
   },
