@@ -51,5 +51,10 @@ Etablir un etat de base : voir sur les différents commit du cours
 #### flitre
 Tag : tous, gentil, mechant
 
+Je veux pouvoir filtrer la liste grâce au 3 boutons (tag). Le filtre s'applique lorsque l'utilisateur clique sur on btn.
+Donc avec la méthode onclik, je dois pouvoir filtrer [ filter() ]. Je pense qu'il faut savoir sur quel btn on click : peut-être 3 methodes à coder ? 
+
+#### Difficultés rencontrées
+
 #### Recherche
 
