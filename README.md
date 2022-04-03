@@ -43,6 +43,11 @@ L'affichage dynamique des images ne voulait pas se faire tant que le dossier se 
   -   https://askcodez.com/charger-des-images-locales-dans-react-js.html
   -    https://www.youtube.com/watch?v=KLkcmw8wAj4
 
+### Mise en place de State
+
+Pour mettre en place state : soit un état de base dès l'ouverture de la page. Il faut transformer le composant en class. 
+Etablir un etat de base : voir sur les différents commit du cours
+
 #### flitre
 Tag : tous, gentil, mechant
 
