@@ -2,7 +2,7 @@ export default [
   {
     name: 'Sonic',
     description: 'Sonic est un hérisson supersonique le plus rapide du monde. Toujours en vadrouille, il va où le vent l\'emporte et vit sa vie selon ses propres règles plutôt que celles de ceux qui l\'entourent. Il est plutôt facile à vivre et aide toujours son prochain. Ce qu\'il déteste plus que tout c\'est Dr Eggman qui veut prendre le contrôle du monde.',
-    picture: '../../../../pictures/sonic.jpg',
+    picture: '/pictures/sonic.jpg',
     type: 'Gentil',
   },
   {
@@ -20,7 +20,7 @@ export default [
   {
     name: 'Knuckles',
     description: 'Knuckles est un échidné égoïste avec des dreadlocks de l\'île de l\'Ange. Il a été nommé gardien de la Master Emerauld. Il est dur, têtu et inflexible. Il se considère être le rival de Sonic, peut-être parce qu\'il rêve d\'un mode de vie plus libre. Il est également chasseur de trésors et compétent en arts martiaux.',
-    picture: '../pictures/knukles.jpg',
+    picture: '../pictures/knuckles.jpg',
     type: 'Gentil',
   },
   {

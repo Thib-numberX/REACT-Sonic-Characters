@@ -10,16 +10,17 @@ import './characters.scss';
 // data
 
 function Character({ name, picture }) {
+  // console.log(character); ...character 
   // console.log('Character is fired');
   return (
     <div className="characters_img-li" key={name}>
-      <img className="characters-img" src={picture} alt="" />
+      <img className="characters-img" src={picture} alt={name} />
       <li className="characters-li">{name}</li>
     </div>
   );
 }
 
-Character.prototypes = {
+Character.protoTypes = {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
 };

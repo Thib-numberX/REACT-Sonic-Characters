@@ -17,8 +17,8 @@ function Characters({ charactersList }) {
       <p className="characters-para">X personnages d'affichés</p>
       <ul className="characters-ul">
         {charactersList.map((character) => (
-          <Character {...character} />
-        ))}
+          <Character {...character} key={character.name} />
+        ))};
       </ul>
     </div>
   );
@@ -28,9 +28,9 @@ Characters.propTypes = {
   charactersList: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
+      // description: PropTypes.string.isRequired, On ne valide que les données dont on va se servir
       picture: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
+      // type: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
 };
