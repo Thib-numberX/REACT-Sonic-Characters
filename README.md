@@ -36,6 +36,13 @@ Dans un premier temps, je vais dynamiser l'affichage de la liste. Pour cela il f
 
 ##### Difficultés rencontrées
 
+L'affichage dynamique des images ne voulait pas se faire tant que le dossier se trouvait dans le dossier src. Pour que cela fonctionne, j'ai dû le déplacer dans le dossier Public. Afin de savor ce que je devais faire,j'ai : 
+  - deamnder sur le slack de la promo
+  - j'ai effectué des recherches sur des sites et sur youtube : 
+  -   https://stackoverflow.com/questions/43823289/how-to-import-image-svg-png-in-a-react-component
+  -   https://askcodez.com/charger-des-images-locales-dans-react-js.html
+  -    https://www.youtube.com/watch?v=KLkcmw8wAj4
+
 #### flitre
 Tag : tous, gentil, mechant
 
