@@ -69,5 +69,14 @@ Creer une méthode qui met à jour le state lors du clique
 - trouver la bonne function
 - mettre des OnClick sur les div
 
+#### Difficultés rencontrées
+appropriation de la méthode filter. J'ai eu un soucis dans restitution du setState. Effectivement, si je ne rajoute pas [0] au retour de la fonction filter(), je n'arrive pas à rentrer dans l'objet.
+const {
+      name,
+      description,
+      picture,
+      type,
+    } = filteredCharacters[0];
+
 #### Recherche
 
