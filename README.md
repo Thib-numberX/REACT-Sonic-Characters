@@ -54,7 +54,20 @@ Tag : tous, gentil, mechant
 Je veux pouvoir filtrer la liste grâce au 3 boutons (tag). Le filtre s'applique lorsque l'utilisateur clique sur on btn.
 Donc avec la méthode onclik, je dois pouvoir filtrer [ filter() ]. Je pense qu'il faut savoir sur quel btn on click : peut-être 3 methodes à coder ? 
 
+Finalement il n'y avait qu'une méthode à coder. Il onClick pour être mis directement sur la méthode qui filtre. J'ai reçu de l'aide d'un ancien élève de O'Clock qui m'a expliqué map() et filter(), pui la bonne façon de faire.
+
 #### Difficultés rencontrées
+
+Je suis parti sur faire une méthode pour le click qui appelle la méthode pour le filtre. Ce qui n'est pas nécessaire.
+J'ai aussi tenté la méthode map(), alors qu'il fallait filtrer, donc filter(). Ce qui veut dire que je n'avais pas corectement saisi leur utilisation. Comme dit au-dessus, j'ai reçu de l'aide via discord d'un ancien élève de O'Clock. Il m'a expliqué simplement.
+
+#### Le click sur un personnage
+
+Je dois dynamiser l'affichage du personnage. C'est-à-dire, lorsque je clique sur un personnage, le state doit se mettre à jour pour afficher les données attendues.
+
+Creer une méthode qui met à jour le state lors du clique
+- trouver la bonne function
+- mettre des OnClick sur les div
 
 #### Recherche
 
