@@ -9,15 +9,16 @@ import Character from './Character';
 import './characters.scss';
 // data
 
-function Characters({ charactersList }) {
+function Characters({ charactersList, characterClick }) {
   // console.log({charactersList});
+  // console.log(characterClick);
   return (
     <div className="characters">
       <input className="characters-input" type="text" placeholder="Rechercher" />
       <p className="characters-para">X personnages d'affichés</p>
       <ul className="characters-ul">
         {charactersList.map((character) => (
-          <Character {...character} key={character.name} />
+          <Character {...character} click={characterClick} key={character.name} />
         ))};
       </ul>
     </div>
@@ -33,6 +34,7 @@ Characters.propTypes = {
       // type: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
+  characterClick: PropTypes.func.isRequired,
 };
 
 export default Characters;
