@@ -80,3 +80,5 @@ const {
 
 #### Recherche
 
+L'input doit permettre d'afficher le personnage voulu. Il faut donc initiliaser la serach et récupérer ce qu'écrit l'utilisateur.
+
