@@ -22,3 +22,22 @@ Lors de l"initialisation sur mon hote, j'ai dû configurer ce dernier pour qu'il
 
 Cela ne fonctionnait pas, ou plutôt n'avait pas l'air de fonctionner. J'ai lancé un appel au secour sur le slack de ma promo pour savoir si quelqu'un avait une réposne à me fournir : sans succès J'ai du éteindre le PC (heeure tardice). Le lendemain matin, j'ai lancer le pc, puis lancé la commande Yarn, via Git bash, et les dépendances ce sont installées. J'en conclu qu'il faut redémarrer le pc : sans doute pour lancer le serveur
 
+## Etape 
+
+### Dynamisation
+
+#### liste
+
+Dans un premier temps, je vais dynamiser l'affichage de la liste. Pour cela il faut :
+- Récupérer les données depuis le composant principal ; 
+- faire du destructuring ;
+- passer les données vers le composant "Characters" : penser à valider les props ; 
+- une fois les données récupérées, il faudra faire une boucle pour générer automatiquement les "li"
+
+##### Difficultés rencontrées
+
+#### flitre
+Tag : tous, gentil, mechant
+
+#### Recherche
+
