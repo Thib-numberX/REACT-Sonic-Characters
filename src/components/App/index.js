@@ -27,12 +27,14 @@ class App extends React.Component {
 
     this.handleFilterTagClick = this.handleFilterTagClick.bind(this);
     this.handleClickCharacters = this.handleClickCharacters.bind(this);
+    this.handleChangeSearch = this.handleChangeSearch.bind(this);
 
     this.state = {
       title: 'Sonic',
       descrip: 'Sonic est un hérisson supersonique le plus rapide du monde. Toujours en vadrouille, il va où le vent l\'emporte et vit sa vie selon ses propres règles plutôt que celles de ceux qui l\'entourent. Il est plutôt facile à vivre et aide toujours son prochain. Ce qu\'il déteste plus que tout c\'est Dr Eggman qui veut prendre le contrôle du monde.',
       picture: '/pictures/sonic.jpg',
       tag: 'Gentil',
+      search: '',
       charactersList: characters,
     };
   }
@@ -64,7 +66,7 @@ class App extends React.Component {
     let filteredCharacters = characters;
 
     filteredCharacters = characters.filter((items) => items.name === currentName);
-    console.log(filteredCharacters);
+    // console.log(filteredCharacters);
 
     const {
       name,
@@ -73,7 +75,7 @@ class App extends React.Component {
       type,
     } = filteredCharacters[0];
 
-    console.log({ name, description, picture, type });
+    // console.log({ name, description, picture, type });
 
     this.setState({
       title: name,
@@ -83,22 +85,61 @@ class App extends React.Component {
     });
   }
 
+  handleChangeSearch(value) {
+    this.setState({
+      search: value,
+    });
+    this.getFilteredCurrencies(value);
+  }
+
+  getFilteredCurrencies(value) {
+    // const { search } = this.state;
+    // console.log('change is fired');
+    let filteredCharacters = characters;
+
+    if (value !== '') {
+      filteredCharacters = characters.filter((item) => {
+        const nameLowerCase = item.name.toLowerCase();
+        const inputSearchLowerCase = value.toLowerCase();
+
+        return nameLowerCase.includes(inputSearchLowerCase);
+      });
+    }
+    this.setState({
+      charactersList: filteredCharacters,
+    });
+
+    // return filteredCharacters;
+  }
+
   render() {
     const {
       title,
       descrip,
       picture,
       tag,
+      search,
       charactersList,
     } = this.state;
     // console.log({ title, descrip, picture, tag });
+    // const searchCharacter = this.getFilteredCurrencies();
 
     return (
       <div className="app">
         <Header />
         <Filter tagClick={this.handleFilterTagClick} />
-        <Current title={title} descrip={descrip} picture={picture} tag={tag} />
-        <Characters charactersList={charactersList} characterClick={this.handleClickCharacters} />
+        <Current
+          title={title}
+          descrip={descrip}
+          picture={picture}
+          tag={tag}
+        />
+        <Characters
+          charactersList={charactersList}
+          characterClick={this.handleClickCharacters}
+          searchValue={search}
+          setSearch={this.handleChangeSearch}
+        />
       </div>
     );
   }
