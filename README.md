@@ -3,7 +3,10 @@
 ## Projet
 
 Création d'un mini site qui répertorie les personnages de Sonic.
-Le site sera fait avec le language REACT. 
+
+## Contexte 
+
+Le langage mis en application est REACT. Cependant, le but de cette auto-exercice est de mettre en application ce qui a été vu lors de la première semaine de formation sur ce langage. C'est pour cela que j'ai utilisé des classes à la place des hooks. Effecteivement, ces derniers n'ont pas été abordés lors de la première semaine. Car, il existe encore des documentations qui utilisent des classes, et lors de la vie professionnelle, il sera possible de voir des apps non mise à jour vers les hooks. C'est pourquoi l'école O'Clock a commencé par les classes.
 
 ### A faire
 
