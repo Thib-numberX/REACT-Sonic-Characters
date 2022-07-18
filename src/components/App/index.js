@@ -40,11 +40,6 @@ class App extends React.Component {
   }
 
   handleFilterTagClick(key) {
-    //! pour un map
-    // 1 - Je prend un array
-    // 2 - J'envoi les éléments en argument d'une fonction anonyme
-    // 3- qui va ensuite s'exécuter
-    // 4- par défaut map renvoi un tableau .
     let filteredCharacterList = characters;
     if (key !== 'Tous') {
       filteredCharacterList = characters.filter((items) => items.type === key);

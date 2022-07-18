@@ -9,7 +9,9 @@ import Character from './Character';
 import './characters.scss';
 // data
 
-function Characters({ charactersList, characterClick, searchValue, setSearch }) {
+function Characters({
+  charactersList, characterClick, searchValue, setSearch,
+}) {
   // console.log({charactersList});
   // console.log(characterClick);
   return (
@@ -26,6 +28,11 @@ function Characters({ charactersList, characterClick, searchValue, setSearch }) 
       />
       <p className="characters-para">X personnages d'affichés</p>
       <ul className="characters-ul">
+        {/* //! pour un map
+          // 1 - Je prend un array
+          // 2 - J'envoi les éléments en argument d'une fonction anonyme
+          // 3- qui va ensuite s'exécuter
+          // 4- par défaut map renvoi un tableau . */}
         {charactersList.map((character) => (
           <Character {...character} click={characterClick} key={character.name} />
         ))};
