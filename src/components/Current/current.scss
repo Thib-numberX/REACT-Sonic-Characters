@@ -3,7 +3,8 @@
 .current{
   background-color: vars.$secondBgColor;
   margin: 15px auto;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   min-height: 150px;
   border-radius: 10px;
   box-shadow: 0 0 2px white;

@@ -3,7 +3,8 @@
 .filter{
   display: flex;
   justify-content: space-around;
-  width: 350px;
+  width: 100%;
+  max-width: 300px;
   &-all{
     background-color:vars.$bgAllColor;
     width : 80px;
